@@ -16,8 +16,10 @@ app.use(
 
 // Importing Routes
 const authRoutes = require("./routes/authRoutes");
+const serviceRoutes = require("./routes/serviceRoutes");
 
 // Using Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/services", serviceRoutes);
 
 module.exports = app;
